@@ -100,26 +100,27 @@ console.log("Hello! Do not disturb... Enrique is coding.");
 //
 // console.log(binary_search(array3, 12));
 
+/*
+// TWO SUM problem in O(N) time & O(1) space.
+// Using hashTable/hashMap
 
-// // TWO SUM problem in O(N) time & O(1) space.
-// // Using hashTable/hashMap
-//
-// var twoSum = function(nums, target) {
-//   var exist = {};
-//
-//   for (var i = 0; i < nums.length; i++) {
-//     var matchNum = target - nums[i];
-//     if (typeof exist[matchNum] === 'number') {
-//       return [exist[matchNum], i];
-//     }
-//     exist[nums[i]] = i;
-//   }
-// }
-//
-// nums = [2, 3, 4, 5, 6, 7];
-// target = 11;
-//
-// console.log(twoSum(nums, target));
+var twoSum = function(nums, target) {
+  var exist = {};
+
+  for (var i = 0; i < nums.length; i++) {
+    var match = target - nums[i];
+    if (typeof exist[match] === 'number') {
+      return [exist[match], i];
+    }
+    exist[nums[i]] = i;
+  }
+}
+
+nums = [2, 3, 4, 5, 6, 7];
+
+console.log(twoSum(nums, 11));
+*/
+
 
 
 // // BINARY NUMBERS WITH ALTERNATING BITS
@@ -238,7 +239,7 @@ console.log("Hello! Do not disturb... Enrique is coding.");
 //
 // console.log(longestDecrease(nums));
 
-
+/*
 var longestIncrease = function(nums) {
   var max = 0, count = 1;
 
@@ -255,12 +256,17 @@ var longestIncrease = function(nums) {
 var arr = [1, 2, 3, 4, 0, 1, 3, 1, 4];
 
 console.log(longestIncrease(arr));
+*/
 
+var numbers = "4 5 123 93123 -324 16 37";
 
+function highAndLow(numbers) {
+  var nums = numbers.split(' ').map(Number);
+  return Math.max(...nums) + " " + Math.min.apply(null, nums);
 
+}
 
-
-
+console.log(highAndLow(numbers));
 
 
 

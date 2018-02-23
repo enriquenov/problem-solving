@@ -258,16 +258,30 @@ var arr = [1, 2, 3, 4, 0, 1, 3, 1, 4];
 console.log(longestIncrease(arr));
 */
 
-var numbers = "4 5 123 93123 -324 16 37";
+// GET THE LOWEST AND HIGHST NUMBER OF A STRING OF NUMBERS
 
-function highAndLow(numbers) {
-  var nums = numbers.split(' ').map(Number);
-  return Math.max(...nums) + " " + Math.min.apply(null, nums);
+// var numbers = "4 5 123 93123 -324 16 37";
+//
+// function highAndLow(numbers) {
+//   var nums = numbers.split(' ').map(Number);
+//   return Math.max(...nums) + " " + Math.min.apply(null, nums);
+//
+// }
+//
+// console.log(highAndLow(numbers));
 
+var uniqueInOrder = function(iterable) {
+  var idx = 0, results = [];
+  while (idx < iterable.length) {
+    if (iterable[idx] !== iterable[idx+1]) {
+      results.push(iterable[idx]);
+    }
+    idx++;
+  }
+  return results;
 }
 
-console.log(highAndLow(numbers));
-
-
+console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+console.log(uniqueInOrder([1,2,2,2,2,3,3]));
 
 //

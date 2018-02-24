@@ -284,4 +284,10 @@ console.log(longestIncrease(arr));
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 // console.log(uniqueInOrder([1,2,2,2,2,3,3]));
 
-//
+function toCharacters(text) {
+  return text.toLowerCase().match(/[a-z]/g).map(ch => ch.charCodeAt() - 95).join(' ');
+}
+
+var str = "The quick brown fox jumped over the lazy dog.";
+
+console.log(toCharacters(str));

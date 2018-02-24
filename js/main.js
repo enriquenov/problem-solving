@@ -270,18 +270,18 @@ console.log(longestIncrease(arr));
 //
 // console.log(highAndLow(numbers));
 
-var uniqueInOrder = function(iterable) {
-  var idx = 0, results = [];
-  while (idx < iterable.length) {
-    if (iterable[idx] !== iterable[idx+1]) {
-      results.push(iterable[idx]);
-    }
-    idx++;
-  }
-  return results;
-}
-
-console.log(uniqueInOrder('AAAABBBCCDAABBB'));
-console.log(uniqueInOrder([1,2,2,2,2,3,3]));
+// var uniqueInOrder = function(iterable) {
+//   var idx = 0, results = [];
+//   while (idx < iterable.length) {
+//     if (iterable[idx] !== iterable[idx+1]) {
+//       results.push(iterable[idx]);
+//     }
+//     idx++;
+//   }
+//   return results;
+// }
+//
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+// console.log(uniqueInOrder([1,2,2,2,2,3,3]));
 
 //

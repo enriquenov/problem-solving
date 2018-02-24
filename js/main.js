@@ -284,10 +284,41 @@ console.log(longestIncrease(arr));
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 // console.log(uniqueInOrder([1,2,2,2,2,3,3]));
 
-function toCharacters(text) {
+/*
+function tocharcode(text) {
   return text.toLowerCase().match(/[a-z]/g).map(ch => ch.charCodeAt() - 95).join(' ');
 }
 
 var str = "The quick brown fox jumped over the lazy dog.";
 
-console.log(toCharacters(str));
+console.log(tocharcode(str));
+*/
+
+// function nbYear(p0, percent, aug, p) {
+//   var count = 0;
+//   while (p0 <= p) {
+//     p0 = (p0 * (percent+100)/100) + aug;
+//     count++;
+//   }
+//   return count;
+// }
+//
+// console.log(nbYear(1500, 5, 100, 5000));
+
+function isValidWalk(walk) {
+  var v = 0, h = 0;
+  if (walk.length !== 10) return false;
+  else {
+    for (var i = 0; i < walk.length; i++) {
+      switch(walk[i]) {
+        case 'n': return v++; break;
+        case 's': return v--; break;
+        case 'e': return h++; break;
+        case 'w': return h--; break;
+      }
+    }
+  }
+  return (v + h) == 0;
+}
+
+console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));

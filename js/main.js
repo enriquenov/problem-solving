@@ -305,18 +305,18 @@ console.log(tocharcode(str));
 //
 // console.log(nbYear(1500, 5, 100, 5000));
 
-// function isValidWalk(walk) {
-//   var v = 0, h = 0, result = false;
-//   if (walk.length === 10) {
-//     for (var i = 0; i < walk.length; i++) {
-//       while (walk[i] == 'n') return v++;
-//       while (walk[i] == 's') return v--;
-//       while (walk[i] == 'e') return h++;
-//       while (walk[i] == 'w') return h--;
-//     }
-//     if ((v + h) === 0) result = true;
-//   }
-//   return result;
-// }
-//
-// console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));
+function isValidWalk(walk) {
+  var v = 0, h = 0, result = false;
+  if (walk.length === 10) {
+    for (var i = 0; i < walk.length; i++) {
+      while (walk[i] == 'n') return v++;
+      while (walk[i] == 's') return v--;
+      while (walk[i] == 'e') return h++;
+      while (walk[i] == 'w') return h--;
+    }
+    if ((v + h) === 0) result = true;
+  }
+  return result;
+}
+
+console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));

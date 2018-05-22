@@ -11,11 +11,52 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/logo-animations.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
+    <div id="logo">
+			<div class="svg">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 
+				<g id="frame">
+					<circle class="st0" cx="50" cy="50" r="49.5">
+						<animateTransform
+						attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						from="0 50 50"
+						to="360 50 50"
+						dur="15s"
+						repeatCount="indefinite" />
+					</circle>
+				</g>
+
+				<g class="animatedLogo">
+
+					<!-- < character -->
+					<line id="menorQueTop" class="st1" x1="10" y1="50" x2="22" y2="40"/>
+					<line id="menorQueBottom" class="st1" x1="10" y1="50" x2="22" y2="60"/>
+					<!-- E character -->
+					<line id="eTop" class="st1" x1="30" y1="34" x2="42" y2="28"/>
+					<line id="eCenterLeft" class="st1" x1="30" y1="42" x2="30" y2="58"/>
+					<line id="eCenterRight" class="st1" x1="30" y1="50" x2="38" y2="50"/>
+					<line id="eBottom" class="st1" x1="30" y1="66" x2="42" y2="72"/>
+					<!-- N character -->
+					<line id="nLeft" class="st1" x1="50" y1="26" x2="50" y2="74"/>
+					<line id="nCenterLeft" class="st1" x1="50" y1="26" x2="62" y2="50"/>
+					<line id="nCenterRight" class="st1" x1="62" y1="50" x2="70" y2="66"/>
+					<line id="nRight" class="st1" x1="70" y1="34" x2="70" y2="66"/>
+					<!-- > character -->
+					<line id="mayorQueTop" class="st1" x1="90" y1="50" x2="78" y2="40"/>
+					<line id="mayorQueBottom" class="st1" x1="90" y1="50" x2="78" y2="60"/>
+
+				</g>
+			</svg>
+		</div>
+	</div>
 
 
 

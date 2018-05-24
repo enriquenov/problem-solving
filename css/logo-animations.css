@@ -9,278 +9,139 @@ body {
 
 svg {
   margin-top: 2rem;
-  height: 20rem;
+  height: 50rem;
 }
 
 svg .st0{fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-dasharray:9.7168,9.7168;}
 svg .st1{fill:none;stroke:#FFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 
-svg g.animatedLogo line#menorQueTop {
+svg:hover g.animatedLogo line#menorQueTop {
   transform-origin: left;
-  animation: rotating1 1s ease-in-out infinite;
+  animation: rotating1 1s ease;
 }
 
-svg g.animatedLogo line#menorQueBottom {
+svg:hover g.animatedLogo line#menorQueBottom {
   transform-origin: left;
-  animation: rotating2 1s ease-in-out infinite;
+  animation: rotating2 1s ease;
 }
 
 svg:hover g.animatedLogo line#eTop {
-  transform-origin: right;
-  animation: rotating3 4s ease-in-out;
+  transform-origin: center;
+  animation: rotating3 1s ease;
 }
 
 svg:hover g.animatedLogo line#eBottom {
-  transform-origin: right;
-  animation: rotating4 4s ease-in-out;
+  transform-origin: center;
+  animation: rotating4 1s ease;
 }
 
 svg:hover g.animatedLogo line#eCenterLeft {
   transform-origin: center;
-  animation: toRight 8s ease-in-out;
+  animation: toRight 1s ease;
 }
 
 svg:hover g.animatedLogo line#eCenterRight {
   transform-origin: center;
-  animation: shrink 8s ease-in-out;
+  animation: shrink 1s ease;
 }
 
 svg:hover g.animatedLogo line#nLeft {
   transform-origin: center;
-  animation: stretch 8s ease-in-out;
+  animation: stretch 1s ease;
 }
 
 svg:hover g.animatedLogo line#nCenterLeft {
   transform-origin: top;
-  animation: toLeft 8s ease-in-out;
+  animation: toLeft 1s ease;
 }
 
 svg:hover g.animatedLogo line#nCenterRight {
   transform-origin: bottom;
-  animation: toRight2 8s ease-in-out;
+  animation: toRight2 1s ease;
 }
 
 svg:hover g.animatedLogo line#nRight {
   transform-origin: center;
-  animation: toLeft2 8s ease-in-out;
+  animation: toLeft2 1s ease;
 }
 
-svg g.animatedLogo line#mayorQueTop {
+svg:hover g.animatedLogo line#mayorQueTop {
   transform-origin: right;
-  animation: rotating5 1s ease-in-out infinite;
+  animation: rotating5 1s ease;
 }
 
-svg g.animatedLogo line#mayorQueBottom {
+svg:hover g.animatedLogo line#mayorQueBottom {
   transform-origin: right;
-  animation: rotating6 1s ease-in-out infinite;
+  animation: rotating6 1s ease;
 }
 
 
 @keyframes rotating1 {
-  /* 0% {
-    transform: rotate(0) translate(0, 0) scale(1);
+  0% {
+    transform: rotate(0) translate(0px, 0px) scale(1);
   }
-  5% {
-    transform: rotate(0.1turn) translate(0px, 0px) scale(0.5);
-  }
-  30% {
-    transform: rotate(0.1turn) translate(0px, 0px) scale(0.5);
-  } */
   50% {
     transform: rotate(39.8deg) translate(2.2px, -6px) scale(0.5);
   }
-  /* 55% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  } */
+  100% {
+    transform: rotate(0deg) translate(0px, 0px) scale(1);
+  }
 }
 
 @keyframes rotating2 {
-  /* 0% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  }
-  5% {
-    transform: rotate(-39.8deg) translate(2.5px, 6px) scale(0.5);
-  }
-  30% {
-    transform: rotate(-39.8deg) translate(2.5px, 6px) scale(0.5);
-  } */
   50% {
     transform: rotate(-39.8deg) translate(2.2px, 6px) scale(0.5);
   }
-  /* 55% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  } */
 }
 
-/* @keyframes rotating3 {
-  0% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  }
-  5% {
-    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
-    stroke: #FFF;
-  }
-  30% {
-    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
-    stroke: #0BD0D8;
-  }
+@keyframes rotating3 {
   50% {
-    transform: rotate(-64deg) translate(-2px, 7px) scale(1.1);
-    stroke: #FFF;
-  }
-  55% {
-    transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(-64deg) translate(20px, 7px) scale(1);
   }
 }
 
 @keyframes rotating4 {
-  0% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  }
-  5% {
-    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
-    stroke: #FFF;
-  }
-  30% {
-    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
-    stroke: #0BD0D8;
-  }
   50% {
-    transform: rotate(64deg) translate(-2px, -7px) scale(1.1);
-    stroke: #FFF;
-  }
-  55% {
-    transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(64deg) translate(20px, -7px) scale(1);
   }
 }
 
 @keyframes toRight {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  5% {
-    transform: translate(4px, 0px) scale(0.8);
-    stroke: #FFF;
-  }
-  30% {
-    transform: translate(4px, 0px) scale(0.8);
-    stroke: #089398;
-  }
   50% {
-    transform: translate(4px, 0px) scale(0.8);
-    stroke: #FFF;
-  }
-  55% {
-    transform: translate(0, 0) scale(1);
+    transform: translate(-4px, 0px) scale(0.7);
   }
 }
 
 @keyframes shrink {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(0.8);
-    stroke: #FFF;
-  }
-  30% {
-    transform: scale(0.8);
-    stroke: #089398;
-  }
   50% {
-    transform: scale(0.8);
-    stroke: #FFF;
-  }
-  55% {
-    transform: scale(1);
+    transform: translate(-7px, 0px) scale(0.7);
   }
 }
 
 @keyframes stretch {
-  0% {
-    transform: scale(1);
-
-  }
-  5% {
-    transform: scale(1.35);
-    stroke: #FFF;
-  }
-  30% {
-    transform: scale(1.35);
-    stroke: #2FE5AE;
-  }
   50% {
-    transform: scale(1.35);
-    stroke: #FFF;
-  }
-  55% {
-    transform: scale(1);
+    transform: scale(1.3);
   }
 }
 
 @keyframes toLeft {
-  0% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  }
-  5% {
-    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
-    stroke: #FFF;
-  }
-  30% {
-    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
-    stroke: #2FE5AE;
-  }
   50% {
-    transform: rotate(26.5deg) translate(-0.5px, 0.5px) scale(0.8);
-    stroke: #FFF;
-  }
-  55% {
-    transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(26.5deg) translate(12px, 3px) scale(0.8);
   }
 }
 
 @keyframes toRight2 {
-  0% {
-    transform: rotate(0) translate(0, 0) scale(1);
-  }
-  5% {
-    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
-    stroke: #FFF;
-  }
-  30% {
-    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
-    stroke: #089398;
-  }
   50% {
-    transform: rotate(26.4deg) translate(-6px, -8px) scale(0.8);
-    stroke: #FFF;
-  }
-  55% {
-    transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(26.5deg) translate(-20px, -19px) scale(0.8);
   }
 }
 
 @keyframes toLeft2 {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  5% {
-    transform: translate(-11px, 0px) scale(1.1);
-    stroke: #FFF;
-  }
-  30% {
-    transform: translate(-11px, 0px) scale(1.1);
-    stroke: #0BD0D8;
-  }
   50% {
-    transform: translate(-11px, 0px) scale(1.1);
-    stroke: #FFF;
+    transform: translate(-13px, 0px) scale(1.1);
   }
-  55% {
-    transform: translate(0, 0) scale(1);
-  }
-} */
+}
 
 @keyframes rotating5 {
   50% {
